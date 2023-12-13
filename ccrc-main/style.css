@@ -1,0 +1,901 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --Background: #2b2b2b;
+  --Call-to-Action: #a259ff;
+  --Text: #ffffff;
+  --Background---Secondary: #3b3b3b;
+  --Caption-label-text: #858584;
+}
+.body-container {
+  background: var(--Background);
+}
+.nav {
+  background-color: var(--Background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+  width: auto;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.home {
+  color: var(--Text);
+  font-family: "space-mono", monospace;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.links-container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+}
+.links-container a {
+  color: var(--Text);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.signup {
+  color: var(--Text);
+  display: flex;
+  height: 60px;
+  padding: 0px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: var(--Call-to-Action);
+  text-decoration: none;
+}
+.signup img {
+  width: 20px;
+  height: 20px;
+}
+.hero-section {
+  background: var(--Background);
+  display: inline-flex;
+  padding-top: 55px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.hero-section-frame {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 195px;
+  margin-right: 195px;
+}
+.hero-text-and-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1 0 0;
+  width: 100%;
+  height: auto;
+}
+.hero-section-headline {
+  color: var(--Text);
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  font-family: Work Sans;
+  font-size: 4.2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.hero-section-subhead {
+  color: var(--Text);
+  width: auto;
+  font-family: Work Sans;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.hero-section-frame a {
+  display: flex;
+  height: 60px;
+  width: fit-content;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: var(--Call-to-Action);
+  color: var(--Text);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-decoration: none;
+}
+.additional-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.additional-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.additional-info-text h4 {
+  color: var(--Text);
+  font-family: Space Mono;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+.additional-info-text p {
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.highlighted-nft {
+  display: flex;
+  width: 45%;
+  height: 510px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.image-placeholder {
+  flex: 1 0 0;
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+  background: url(highlightednft.png),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  align-self: stretch;
+}
+.artist-card-frame {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--Background---Secondary);
+}
+.artist-card-frame h5 {
+  align-self: stretch;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.artist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+.artist-card img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.artist-card p {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.trending {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+  gap: 60px;
+}
+.trending-frame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-left: 195px;
+  margin-right: 195px;
+  margin-bottom: 80px;
+}
+.trending-section-headline {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.trending-headline {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.trending-subhead {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.collection-card-container {
+  display: flex;
+  width: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+.collection-card {
+  display: flex;
+  width: 330px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.collection-card-placeholder1 {
+  height: 330px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: url(dsgnanimal1.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-placeholder2 {
+  height: 330px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: url(magicmushroom1.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-placeholder3 {
+  height: 330px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: url(discomachine1.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+.collection-card-secondary-placeholder1-1 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(dsgnanimal2.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary-placeholder1-2 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(dsgnanimal3.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary-placeholder2-1 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(magicmushroom2.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary-placeholder2-2 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(magicmushroom3.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary-placeholder3-1 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(discomachine2.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.collection-card-secondary-placeholder3-2 {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: url(discomachine3.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.additional-nfts {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: var(--Call-to-Action);
+  color: var(--Text);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  cursor: pointer;
+}
+.collection-info-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.collection-info-frame h5 {
+  align-self: stretch;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.collection-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+.collection-info img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.collection-info p {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.top-creators {
+  background: var(--Background);
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.top-creators-frame {
+  margin-left: 195px;
+  margin-right: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.top-creators-text-and-buttons {
+  display: flex;
+  align-items: flex-end;
+  gap: 100px;
+  align-self: stretch;
+}
+.top-creators-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.top-creators-headline {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.top-creators-subhead {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.top-creators-text-and-buttons a {
+  display: flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  border: 2px solid var(--Call-to-Action);
+  text-decoration: none;
+  color: var(--Text);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+}
+.top-creators-text-and-buttons svg {
+  width: 20px;
+  height: 20px;
+}
+.artist-card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.artist-profiles {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: #3b3b3b;
+}
+.artist-avatar {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.artist-avatar-placeholder1 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar1.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder2 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar2.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder3 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar3.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder4 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar4.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder5 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar5.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder6 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar6.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder7 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar7.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder8 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar8.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder9 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar9.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder10 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar14.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder11 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar15.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-avatar-placeholder12 {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: url(Avatar17.png),
+    lightgray 50% / cover no-repeat;
+}
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  align-self: stretch;
+}
+.artist-name {
+  align-self: stretch;
+  color: var(--Text);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.artist-additional-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.sales {
+  color: var(--Caption-label-text);
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.money {
+  color: var(--Text, #fff);
+  font-family: Space Mono;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.browse-categories {
+  background-color: var(--Background);
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.browse-categories-frame {
+  margin-left: 195px;
+  margin-right: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.browse-categories-headline {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.category-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.category-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+.card-icon {
+  position: absolute;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+}
+.category-image-detail {
+  display: flex;
+  padding: 20px 30px 25px 30px;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.category-card-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.discover-more {
+  background-color: var(--Background);
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.discover-frame {
+  margin-left: 195px;
+  margin-right: 195px;
+}
+.discover-text-and-buttons {
+  display: flex;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.discover-headline {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.discover-subhead {
+  flex: 1 0 0;
+  color: var(--Text);
+  font-family: Work Sans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.section-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.discover-text-and-buttons a {
+  display: flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  border: 2px solid var(--Call-to-Action);
+  color: var(--Text);
+  text-align: center;
+  text-decoration: none;
+  font-family: work sans;
+  white-space: nowrap;
+}
+.nft-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.nft-cards {
+  display: flex;
+  height: 530px;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  margin-top: 60px;
+}
+.nft-placeholder1 {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  background: url(discovernft1.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.nft-placeholder2 {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  background: url(discovernft2.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.nft-placeholder3 {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  background: url(discovernft3.png),
+    lightgray 50% / cover no-repeat;
+  background-size: contain;
+}
+.nft-info {
+  display: flex;
+  padding: 20px 30px 30px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  background-color: var(--Background---Secondary);
+  align-self: stretch;
+  color: var(--White, #fff);
+  font-family: Work Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  border-radius: 0 0 20px 20px;
+}
+.artist-profile-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 1 0 0;
+  color: var(--White, #fff);
+  font-family: Space Mono;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.artist-profile-card img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.additional-nft-info {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.price {
+  display: flex;
+  padding-right: 21px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+}
+.bid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  flex: 1 0 0;
+}
+.smallprice {
+  align-self: stretch;
+  color: #858584;
+  font-family: Space Mono;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.crypto {
+  align-self: stretch;
+  color: var(--Text);
+  font-family: Space Mono;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.highestbid {
+  align-self: stretch;
+  color: #858584;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+.weth {
+  color: var(--Text);
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
